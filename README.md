@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prometheus - Mathematical Visualization Platform
+
+Prometheus is a web application that combines the power of Large Language Models with mathematical visualization to help users understand and visualize mathematical concepts. Using Manim for animations and Groq's LLM capabilities, it creates beautiful, interactive visualizations of mathematical problems and provides step-by-step explanations.
+
+## Features
+
+- Interactive mathematical problem input
+- Real-time visualization generation
+- Step-by-step problem explanations
+- Beautiful animations using Manim
+- Responsive design
+- Real-time status updates
+
+## Tech Stack
+
+- **Frontend Framework**: Next.js
+- **UI Library**: React
+- **Styling**: Tailwind CSS
+- **Video Player**: ReactPlayer
+- **API Integration**: Axios
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- Backend server running (see prometheus-backend project)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/prometheus.git
+cd prometheus
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
+
+4. Start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Enter a mathematical problem or concept in the input field
+2. Click "Generate" to create the visualization
+3. Watch the animation and read the step-by-step explanation
+4. The video can be replayed and the explanation can be reviewed at any time
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+prometheus/
+├── src/
+│   ├── app/          # Next.js app directory
+│   ├── components/   # React components
+│   └── styles/       # CSS styles
+├── public/           # Static files
+└── package.json      # Project dependencies
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Acknowledgments
+
+- [Manim](https://www.manim.community/) for mathematical animations
+- [Groq](https://groq.com/) for LLM capabilities
+- [Next.js](https://nextjs.org/) for the frontend framework
